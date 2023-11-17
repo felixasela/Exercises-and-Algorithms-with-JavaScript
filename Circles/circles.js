@@ -2,14 +2,14 @@
 
 const pi = 3.1426;
 
-let areaCircle = (radio, pi) => Math.pow(radio, 2) * pi;
+const areaCircle = (radius, pi) => Math.pow(radius, 2) * pi;
 
-const perimeterCircle = (radio, pi) => 2 * radio * pi;
+const perimeterCircle = (radius, pi) => 2 * radius * pi;
 
-let radio = parseFloat(prompt("Ingrese el radio del círculo:"));
+let radius = parseFloat(prompt("Ingrese el radio del círculo:"));
 
-const area = areaCircle(radio, pi);
-const perimeter = perimeterCircle(radio, pi);
+const area = areaCircle(radius, pi);
+const perimeter = perimeterCircle(radius, pi);
 
 document.write("El área del círculo es: " + area.toFixed(2) + "<br>");
 document.write("El perímetro del círculo es: " + perimeter.toFixed(2));
